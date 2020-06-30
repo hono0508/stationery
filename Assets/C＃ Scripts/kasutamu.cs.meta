@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: d4a6980d5566949428e87ffbdd04632b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - syapen: {fileID: 3896125361406270767, guid: f3358f59d3a9dc1408cd93e84f4b8019,
+      type: 3}
+  - boulpen: {fileID: 3896125361406270767, guid: 05a3dbeca403b7442bbd99d2475996b5,
+      type: 3}
+  - mannenhitu: {fileID: 3896125361406270767, guid: 6c00d4669db828c4389c378e0df91850,
+      type: 3}
+  - enpitu: {fileID: 3896125361406270767, guid: f56c976c0f3bd1943849b91c8e9bf260,
+      type: 3}
+  - nori: {fileID: 3896125361406270767, guid: dbb1ba3b683ed044e8d927d6f26c4693, type: 3}
+  - konpasu: {fileID: 3896125361406270767, guid: 05ccbd39cb6955e458e4cb31f6a6fbf5,
+      type: 3}
+  - zyougi: {fileID: 3896125361406270767, guid: 5b698e5331911ed43af54b237d36315d,
+      type: 3}
+  - hurikusyon: {fileID: 3896125361406270767, guid: 878c48f92c7150743a310c9ece198bea,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: b4f3b664c492dd142900b1310b1b38ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - home: {fileID: 2903662410292518372, guid: f048c8bdc4fe0754cacecc00a51811b2, type: 3}
+  - settei: {fileID: 5881536873252385399, guid: 05c826c6a2aad604d9ee52509a8689f5,
+      type: 3}
+  - batoruserekuto: {fileID: 3871328981994469440, guid: c5e1898f582aba04da46b6035e0218dd,
+      type: 3}
+  - motimono: {fileID: 6076902345059943349, guid: 6233121f7d1b29949a3ac630f11d9748,
+      type: 3}
+  - koumonu: {fileID: 2548802663403931011, guid: 4d5c85ab587e215479045cee5078afed,
+      type: 3}
+  - gakko: {fileID: 6412033922602172095, guid: 7508f5c12a93be8459488d7a155ea18f, type: 3}
+  - gatya: {fileID: 711757452143399179, guid: 5cae52d9f06cc7b4dad27e077d6bbf84, type: 3}
+  - inventory: {fileID: 4854717140176428585, guid: 2e7c31819ee4f7341a775e09299f2fc7,
+      type: 3}
+  - name: {fileID: 539243127727065579, guid: 91f2000352e877b42ac36ca08114a531, type: 3}
+  - inpurField: {fileID: 7344846093871347130, guid: c240b0bdb1dcf034089a3bd2699d980b,
+      type: 3}
+  - text: {fileID: 1097906055498840227, guid: d13b7427a3a41924f95d8299f74d2426, type: 3}
+  - homeback: {fileID: 7788121217986561854, guid: 983e2a8b36811d84b8f6b996507e43d3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
