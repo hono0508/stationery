@@ -19,7 +19,7 @@ public class powerup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        inventory.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,14 +33,21 @@ public class powerup : MonoBehaviour
         {
             inventory.SetActive(true);
             selectnumber = number;
+
         }
     }
 
     public void changeImage(int itemnumber)
     {
-         Flame [selectnumber - 1 ].image = kstm.icon[itemnumber].GetComponent<Button>().image;
+         Flame [selectnumber - 1 ].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
 
-        if(selectnumber == 6)
+        //ボタンの子供であるTextを取得、非表示に
+        Flame[selectnumber - 1].gameObject.transform.Find("Text").gameObject.SetActive(false);
+
+        //ログに選択した素材の表示
+        // Debug.Log(kstm.icon[itemnumber].GetComponent<Button>().image);
+
+        if (selectnumber == 6)
         {
             itemnumber6 = itemnumber;
         }

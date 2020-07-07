@@ -43,7 +43,7 @@ public class GatyaScript : MonoBehaviour
                 Instantiate(icon[i], Vector3.zero, Quaternion.identity, SubPanel);
         }
 
-        koumoku.SetActive(false);
+       
 
 
 
@@ -76,7 +76,7 @@ public class GatyaScript : MonoBehaviour
 
         scene();
 
-        koumoku.SetActive(false);
+       
     }
 
     // Start is called before the first frame update
@@ -103,7 +103,7 @@ public class GatyaScript : MonoBehaviour
     {
         anime.SetTrigger("buck Trigger");
 
-        koumoku.SetActive(true);
+      
     }
 
 

@@ -74,10 +74,17 @@ public class TorF : MonoBehaviour
         SceneManager.LoadScene("inventory");
     }
 
-    public void loadshop()
+    public void loadkyoka()
     {
-        SceneManager.LoadScene("shop");
+        SceneManager.LoadScene("kyoka");
     }
+
+    public void loadgame()
+    {
+        SceneManager.LoadScene("game");
+    }
+
+
 
     public void nameenter()
     {

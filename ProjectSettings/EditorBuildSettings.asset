@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/inventory.unity
     guid: e160e239bea7b284796d141c3d378ecb
   - enabled: 1
+    path: Assets/Scenes/kyoka.unity
+    guid: 0e0adc9ea73583346aa15a30b1b84f84
+  - enabled: 1
     path: Assets/Scenes/motimono.unity
     guid: 138b22ebe71175242b97ea419bf02788
   - enabled: 1
@@ -38,7 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/settei.unity
     guid: 03a06d66d30acc24ba26234460c1013b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/shop.unity
     guid: d3a712183b9c190498cf076f221a3a73
   m_configObjects: {}

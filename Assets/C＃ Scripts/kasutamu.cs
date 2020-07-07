@@ -35,8 +35,5 @@ public class kasutamu : MonoBehaviour
         
     }
 
-    private void powerup()
-    {
-       
-    }
+   
 }
