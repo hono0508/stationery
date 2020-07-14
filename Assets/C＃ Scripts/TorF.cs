@@ -9,19 +9,20 @@ public class TorF : MonoBehaviour
 
     public InputField inputField;
 
-    public Text text;
+    public Text nametext;
 
-
+    public Text moneytext;
 
     // Start is called before the first frame update
     void Start()
     {
         //PlayerPrefs.DeleteKey("USER_NAME");
         Debug.Log(PlayerPrefs.GetString("USER_NAME", ""));
-        text.text = PlayerPrefs.GetString("USER_NAME", "");
+        nametext.text = PlayerPrefs.GetString("USER_NAME", "");
 
+        moneytext.text = seatus.money.ToString();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -84,16 +85,33 @@ public class TorF : MonoBehaviour
         SceneManager.LoadScene("game");
     }
 
+    public void loadkyara()
+    {
+        SceneManager.LoadScene("kyara");
+    }
 
+    public void loadhensei()
+    {
+        SceneManager.LoadScene("hensei");
+    }
 
     public void nameenter()
     {
-        text.text = inputField.text;
+        nametext.text = inputField.text;
         PlayerPrefs.SetString("USER_NAME", inputField.text);
         //名前の保存
         PlayerPrefs.Save();
     }
 
+    public void money()
+    {
+       PlayerPrefs.SetInt("MONEY", seatus.money);
+        //名前の保存
+        PlayerPrefs.Save();
+    }
+
+   
+    
 
 }
 

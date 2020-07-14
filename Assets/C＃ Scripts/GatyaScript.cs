@@ -27,13 +27,25 @@ public class GatyaScript : MonoBehaviour
     public void Onecount(){
         string[] name = { "シャーペン", "ボールペン", "万年筆", "鉛筆", "ノリ", "コンパス", "定規", "フリクション", };
         int item = Random.Range(0, 8);
-        seatus.itemcount[item] ++;
-        text.text = name[item] + "をゲット！！";
 
-        secen1.SetActive(true);
-        secen10.SetActive(false);
+        seatus.money -= 100;
+        if (seatus.money < 100)
+        {
+            secen1.SetActive(false);
+            secen10.SetActive(false);
+            text.text = "お金が足りないよ！";
+            Debug.Log("No money");
+        }
+        else
+        {
+            seatus.itemcount[item]++;
+            text.text = name[item] + "をゲット！！";
 
+            secen1.SetActive(true);
+            secen10.SetActive(false);
+        }
         scene();
+
         for (int i = 0; i < icon.Length; i++)
             for (int j = 0; j < seatus.itemcount[i]; j++)
         {
@@ -53,29 +65,38 @@ public class GatyaScript : MonoBehaviour
     {
         text.text = "";
         string[] name = { "シャーペン", "ボールペン", "万年筆", "鉛筆", "ノリ", "コンパス", "定規", "フリクション", };
-   
-        for(int i=0; i<10; i++)
+
+        for (int i = 0; i < 10; i++)
         {
             int item = Random.Range(0, 8);
-            seatus.itemcount[item]++;
-            seatus.itemcount[item]++;
+            seatus.money -= 1000;
+            if (seatus.money < 1000)
+            {
+                secen1.SetActive(false);
+                secen10.SetActive(false);
+                text.text = "お金が足りないよ！";
+                Debug.Log("No money");
+            }else
+            {
+                seatus.itemcount[item]++;
+                seatus.itemcount[item]++;
 
-            
-            if(i % 3 == 0)
-            {
-                text.text += name[item] + "をゲット！！\n";
+                if (i % 3 == 0)
+                {
+                    text.text += name[item] + "をゲット！！\n";
+                }
+                else
+                {
+                    text.text += name[item] + "をゲット！！ ";
+                }
+                secen1.SetActive(false);
+                secen10.SetActive(true);
             }
-            else
-            {
-                text.text += name[item] + "をゲット！！ ";
-            }
+
         }
 
-        secen1.SetActive(false);
-        secen10.SetActive(true);
-
         scene();
-
+    
        
     }
 
@@ -106,6 +127,8 @@ public class GatyaScript : MonoBehaviour
       
     }
 
+
+    
 
 
 }

@@ -28,7 +28,8 @@ public class powerup : MonoBehaviour
 
     }
 
-    public void OnClickFlame(int number) {
+    public void OnClickFlame(int number)
+    {
         if (selectnumber == 0)
         {
             inventory.SetActive(true);
@@ -39,7 +40,7 @@ public class powerup : MonoBehaviour
 
     public void changeImage(int itemnumber)
     {
-         Flame [selectnumber - 1 ].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
+        Flame[selectnumber - 1].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
 
         //ボタンの子供であるTextを取得、非表示に
         Flame[selectnumber - 1].gameObject.transform.Find("Text").gameObject.SetActive(false);
@@ -60,27 +61,41 @@ public class powerup : MonoBehaviour
     {
         for (int f = 0; f < Flame.Length; f++)
         {
-            if (Flame[5] != Flame[f])
-            { 
+            if (Flame[5].image.sprite != Flame[f].image.sprite)
+            {
                 Debug.Log("合成できません");
+                Reset();
                 return;
             }
         }
+        
+        success();
+    }
 
+    public void success()
+    {
         seatus.itemcount[itemnumber6] -= 5;
         seatus.itemcount[itemnumber6 + 8] += 1;
-        Reset();
+        Flame[5].image.sprite = kstm.icon[itemnumber6 + 8].GetComponent<Button>().image.sprite;
+        for (int f = 0; f < Flame.Length - 1; f++)
+        {
+            selectnumber = 0;
+            Flame[f].image.sprite = null;
+        }
+        Debug.Log("sucsess");
     }
 
     public void Reset()
     {
+        Debug.Log("reset");
         for (int f = 0; f < Flame.Length; f++)
         {
-           selectnumber = 0;
-
+            selectnumber = 0;
+            Flame[f].image.sprite = null;
         }
     }
 }
+
 
 
         

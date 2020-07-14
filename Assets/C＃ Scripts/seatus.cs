@@ -16,6 +16,9 @@ public class seatus: MonoBehaviour
 
     public static int[] itemcount = new int[24];
 
+
+    public static int money;
+
     // Start is called before the first frame update
     void Start()
     {

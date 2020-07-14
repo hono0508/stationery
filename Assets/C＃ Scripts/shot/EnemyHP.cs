@@ -42,6 +42,7 @@ void Update()
         {
             Destroy(this.gameObject);
             plyer.enemycount++;
+            seatus.money += 100;
         }
     }
 

@@ -26,4 +26,6 @@ public class itemwindow : MonoBehaviour
     {
         ani.SetTrigger("Blue Trigger");
     }
+
+  
 }

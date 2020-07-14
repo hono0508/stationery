@@ -4035,7 +4035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 0}
-  text: {fileID: 1097906056882974826}
+  nametext: {fileID: 1097906056882974826}
+  moneytext: {fileID: 1617219695}
 --- !u!4 &1452891979
 Transform:
   m_ObjectHideFlags: 0
@@ -4335,7 +4336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000008218983, y: -0.000013751617}
+  m_AnchoredPosition: {x: -0.000018174904, y: 0.000005608327}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1598028099
@@ -4576,7 +4577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9999999999999999
+  m_Text: 
 --- !u!222 &1617219696
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5373,8 +5374,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1499950885}
   m_HandleRect: {fileID: 1499950884}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9998928
+  m_Value: 0
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5498,12 +5499,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1452891978}
+        m_MethodName: loadkyara
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
