@@ -33,5 +33,11 @@ public class henseiselect : MonoBehaviour
 
 
     }
+    public void close()
+    {
+        anime.SetTrigger("Reset Trigger");
+
+
+    }
 }
 

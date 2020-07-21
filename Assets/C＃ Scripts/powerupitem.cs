@@ -20,6 +20,11 @@ public class powerupitem : MonoBehaviour
 
     }
 
+    public void customAction(int itemnumber)
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        
+    }
 
     public void kyokaAction(int itemnumber)
     {
@@ -27,6 +32,10 @@ public class powerupitem : MonoBehaviour
         if (scene.name == "kyoka")
         {
             GameObject.Find("Powerupmanager").gameObject.GetComponent<powerup>().changeImage(itemnumber);
+        }
+        else if (scene.name == "hensei")
+        {
+            GameObject.Find("Custommanager").gameObject.GetComponent<custom>().changeImage(itemnumber);
         }
     }
 }

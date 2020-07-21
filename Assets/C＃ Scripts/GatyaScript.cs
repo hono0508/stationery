@@ -28,16 +28,17 @@ public class GatyaScript : MonoBehaviour
         string[] name = { "シャーペン", "ボールペン", "万年筆", "鉛筆", "ノリ", "コンパス", "定規", "フリクション", };
         int item = Random.Range(0, 8);
 
-        seatus.money -= 100;
         if (seatus.money < 100)
         {
             secen1.SetActive(false);
             secen10.SetActive(false);
             text.text = "お金が足りないよ！";
             Debug.Log("No money");
+
         }
         else
         {
+            seatus.money -= 100;
             seatus.itemcount[item]++;
             text.text = name[item] + "をゲット！！";
 
@@ -69,7 +70,6 @@ public class GatyaScript : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             int item = Random.Range(0, 8);
-            seatus.money -= 1000;
             if (seatus.money < 1000)
             {
                 secen1.SetActive(false);
@@ -78,6 +78,7 @@ public class GatyaScript : MonoBehaviour
                 Debug.Log("No money");
             }else
             {
+                seatus.money -= 1000;
                 seatus.itemcount[item]++;
                 seatus.itemcount[item]++;
 

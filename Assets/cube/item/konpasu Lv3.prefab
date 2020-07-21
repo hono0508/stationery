@@ -294,9 +294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200c642e2b5fbf44fba8a1f6c3f3d387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taikyu: 20
-  hp: 40
-  attack: 20
+  taikyu: 100
+  hp: 30
+  attack: 30
 --- !u!114 &1535303575
 MonoBehaviour:
   m_ObjectHideFlags: 0
