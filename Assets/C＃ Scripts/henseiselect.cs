@@ -15,12 +15,16 @@ public class henseiselect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+    public void reset()
+    {
         if (Input.GetKeyDown("space"))
         {
             anime.SetTrigger("Reset　Trigger");
         }
-
     }
+
     public void main()
     {
         anime.SetTrigger("Main Trigger");

@@ -16,10 +16,16 @@ public class powerup : MonoBehaviour
 
     public kasutamu kstm;
 
+    Image Image;
+
+    public Sprite m_Sprite;
+
     // Start is called before the first frame update
     void Start()
     {
         inventory.SetActive(false);
+        Image = GetComponent<Image>();
+
     }
 
     // Update is called once per frame
@@ -80,7 +86,7 @@ public class powerup : MonoBehaviour
         for (int f = 0; f < Flame.Length - 1; f++)
         {
             selectnumber = 0;
-            Flame[f].image.sprite = null;
+            Flame[f].image.sprite = m_Sprite;
         }
         Debug.Log("sucsess");
     }
@@ -91,7 +97,7 @@ public class powerup : MonoBehaviour
         for (int f = 0; f < Flame.Length; f++)
         {
             selectnumber = 0;
-            Flame[f].image.sprite = null;
+            Flame[f].image.sprite = m_Sprite;
         }
     }
 }
