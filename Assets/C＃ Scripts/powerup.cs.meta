@@ -6,7 +6,7 @@ MonoImporter:
   defaultReferences:
   - inventory: {instanceID: 0}
   - kstm: {instanceID: 0}
-  - m_Sprite: {fileID: 21300000, guid: 4dfe6d4139834d242a5045c10aebac20, type: 3}
+  - sprite: {fileID: 21300000, guid: 4dfe6d4139834d242a5045c10aebac20, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

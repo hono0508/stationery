@@ -18,7 +18,8 @@ public class powerup : MonoBehaviour
 
     Image Image;
 
-    public Sprite m_Sprite;
+    [SerializeField]
+    private Sprite sprite;
 
     // Start is called before the first frame update
     void Start()
@@ -86,7 +87,7 @@ public class powerup : MonoBehaviour
         for (int f = 0; f < Flame.Length - 1; f++)
         {
             selectnumber = 0;
-            Flame[f].image.sprite = m_Sprite;
+            Flame[f].image.sprite = sprite;
         }
         Debug.Log("sucsess");
     }
@@ -97,7 +98,7 @@ public class powerup : MonoBehaviour
         for (int f = 0; f < Flame.Length; f++)
         {
             selectnumber = 0;
-            Flame[f].image.sprite = m_Sprite;
+            Flame[f].image.sprite = sprite;
         }
     }
 }
