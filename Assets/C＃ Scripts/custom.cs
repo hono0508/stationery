@@ -14,6 +14,7 @@ public class custom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seatus.itemcount[1] = 5;
         for (int i = 0; i < seatus.armor.Length; i++)
         {
             seatus.money = 10000;
@@ -44,10 +45,18 @@ public class custom : MonoBehaviour
     public void changeImage(int itemnumber)
     {
 
-        Flame[selectnumber].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
+        Flame[selectnumber-1].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
+
+        if (seatus.armor[selectnumber-1] != 24)
+        {
+            seatus.itemcount[seatus.armor[selectnumber-1]]++;
+        }
+        seatus.armor[selectnumber -1] = itemnumber;
+        seatus.itemcount[itemnumber]--; //選択したアイテムを減らす
 
         //ボタンの子供であるTextを取得、非表示に
-        Flame[selectnumber].gameObject.transform.Find("Text").gameObject.SetActive(false);
+        if (Flame[selectnumber-1].gameObject.transform.Find("Text"))
+            Flame[selectnumber-1].gameObject.transform.Find("Text").gameObject.SetActive(false);
 
         selectnumber = 0;
         //inventory.SetActive(false);

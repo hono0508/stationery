@@ -62,15 +62,15 @@ public class GatyaScript : MonoBehaviour
 
     }
 
-    public void Tencount()
+    public void fivecount()
     {
         text.text = "";
         string[] name = { "シャーペン", "ボールペン", "万年筆", "鉛筆", "ノリ", "コンパス", "定規", "フリクション", };
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 5; i++)
         {
             int item = Random.Range(0, 8);
-            if (seatus.money < 1000)
+            if (seatus.money < 500)
             {
                 secen1.SetActive(false);
                 secen10.SetActive(false);
@@ -78,7 +78,7 @@ public class GatyaScript : MonoBehaviour
                 Debug.Log("No money");
             }else
             {
-                seatus.money -= 1000;
+                seatus.money -= 500;
                 seatus.itemcount[item]++;
                 seatus.itemcount[item]++;
 

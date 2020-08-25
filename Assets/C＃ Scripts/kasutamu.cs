@@ -14,6 +14,8 @@ public class kasutamu : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
+        Reset(); //inventoryの中身を初期化
+
         //int[] debugStatus = { 15, 0, 0, 0, 0, 0, 0, 0 };
         //seatus.itemcount = debugStatus;
         for (int i = 0; i < icon.Length; i++)

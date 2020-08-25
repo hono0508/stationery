@@ -7,6 +7,7 @@ public class powerup : MonoBehaviour
 {
 
     int selectnumber = 0;
+    public int[] selectedItemNums = new int[6];　//空の時は100
 
     public GameObject inventory;
 
@@ -24,6 +25,11 @@ public class powerup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        for(int i=0; i<selectedItemNums.Length; i++)
+        {
+            selectedItemNums[i] = 100;
+        }
+        //サンプル　seatus.itemcount[0] = 5; 
         inventory.SetActive(false);
         Image = GetComponent<Image>();
 
@@ -32,6 +38,7 @@ public class powerup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(seatus.itemcount[9]);
 
     }
 
@@ -59,6 +66,15 @@ public class powerup : MonoBehaviour
         {
             itemnumber6 = itemnumber;
         }
+
+        if (selectedItemNums[selectnumber-1] != 100)
+        {
+            seatus.itemcount[selectedItemNums[selectnumber-1]]++;
+        }
+        selectedItemNums[selectnumber-1] = itemnumber; //選択しているアイテム番号を保存しておく
+        seatus.itemcount[itemnumber]--; //選択したアイテムを減らす
+
+
         selectnumber = 0;
         inventory.SetActive(false);
 
@@ -68,7 +84,7 @@ public class powerup : MonoBehaviour
     {
         for (int f = 0; f < Flame.Length; f++)
         {
-            if (Flame[5].image.sprite != Flame[f].image.sprite)
+            if (Flame[5].image.sprite != Flame[f].image.sprite || Flame[5].image.sprite.name == "empty")
             {
                 Debug.Log("合成できません");
                 Reset();
@@ -95,6 +111,16 @@ public class powerup : MonoBehaviour
     public void Reset()
     {
         Debug.Log("reset");
+
+        for (int i = 0; i < selectedItemNums.Length; i++)
+        {
+            if(selectedItemNums[i] != 100)
+            {
+                seatus.itemcount[selectedItemNums[i]]++;
+            }
+            selectedItemNums[i] = 100;
+        }
+
         for (int f = 0; f < Flame.Length; f++)
         {
             selectnumber = 0;

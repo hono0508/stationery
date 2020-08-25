@@ -17,10 +17,10 @@ public class TorF : MonoBehaviour
     void Start()
     {
         //PlayerPrefs.DeleteKey("USER_NAME");
-        Debug.Log(PlayerPrefs.GetString("USER_NAME", ""));
-        nametext.text = PlayerPrefs.GetString("USER_NAME", "");
+     //   Debug.Log(PlayerPrefs.GetString("USER_NAME", ""));
+      //  nametext.text = PlayerPrefs.GetString("USER_NAME", "");
 
-        moneytext.text = seatus.money.ToString();
+       // moneytext.text = seatus.money.ToString();
     }
     
     // Update is called once per frame

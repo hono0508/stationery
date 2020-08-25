@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/batoruserekuto.unity
     guid: 9592b2a90dac169478a07e07b7b8c0ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/gakko.unity
     guid: 83c8863abf90aa147a42569b58b1dd81
   - enabled: 1
@@ -47,7 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/settei.unity
     guid: 03a06d66d30acc24ba26234460c1013b
+  - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: a17464d513690c447a6625cafd646f74
   - enabled: 0
     path: 
-    guid: d3a712183b9c190498cf076f221a3a73
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

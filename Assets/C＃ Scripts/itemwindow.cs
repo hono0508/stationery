@@ -10,6 +10,7 @@ public class itemwindow : MonoBehaviour
     void Start()
     {
         ani = gameObject.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -17,14 +18,15 @@ public class itemwindow : MonoBehaviour
     {
         
     }
-   public void Red()
+   public void Main()
     {
-        ani.SetTrigger("Red Trigger");
+        ani = gameObject.GetComponent<Animator>();
+        ani.SetTrigger("main");
     }
 
-    public void Blue()
+    public void Sub()
     {
-        ani.SetTrigger("Blue Trigger");
+        ani.SetTrigger("sub");
     }
 
   
