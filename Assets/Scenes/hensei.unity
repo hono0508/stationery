@@ -2671,7 +2671,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999998
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4962,7 +4962,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: changeImage
+        m_MethodName: OnClickFlame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

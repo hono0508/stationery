@@ -49,6 +49,8 @@ public class custom : MonoBehaviour
     {
 
         Flame[selectnumber-1].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
+        Debug.Log(itemnumber);
+        Debug.Log(selectnumber);
 
         if (seatus.armor[selectnumber-1] != 24)
         {

@@ -63,6 +63,8 @@ public class powerup : MonoBehaviour
     public void changeImage(int itemnumber)
     {
         Flame[selectnumber - 1].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
+        Debug.Log(itemnumber);
+        Debug.Log(selectnumber);
 
         //ボタンの子供であるTextを取得、非表示に
         Flame[selectnumber - 1].gameObject.transform.Find("Text").gameObject.SetActive(false);
