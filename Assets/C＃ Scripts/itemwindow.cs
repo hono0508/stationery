@@ -20,11 +20,11 @@ public class itemwindow : MonoBehaviour
     }
    public void Main()
     {
-        ani.SetTrigger("main");
+        ani.SetTrigger("hensei(main)");
     }
     public void Sub()
     {
-        ani.SetTrigger("sub");
+        ani.SetTrigger("hensei(sub)");
     }
 
 

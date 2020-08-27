@@ -44,6 +44,11 @@ public class powerup : MonoBehaviour
     {
         Debug.Log(seatus.itemcount[9]);
 
+        if (Input.GetKey(KeyCode.Space))
+        {
+            maininventory.SetActive(false);
+            subinventory.SetActive(false);
+        }
     }
 
     public void OnClickFlame(int number)
@@ -63,8 +68,6 @@ public class powerup : MonoBehaviour
     public void changeImage(int itemnumber)
     {
         Flame[selectnumber - 1].image.sprite = kstm.icon[itemnumber].GetComponent<Button>().image.sprite;
-        Debug.Log(itemnumber);
-        Debug.Log(selectnumber);
 
         //ボタンの子供であるTextを取得、非表示に
         Flame[selectnumber - 1].gameObject.transform.Find("Text").gameObject.SetActive(false);
