@@ -11,7 +11,10 @@ public class custom : MonoBehaviour
     private int selectnumber;
     public GameObject inventory;
     public henseiselect close;
+
     // Start is called before the first frame update
+
+
     void Start()
     {
         seatus.itemcount[1] = 5;

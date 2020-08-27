@@ -7,9 +7,12 @@ public class powerup : MonoBehaviour
 {
 
     int selectnumber = 0;
+
     public int[] selectedItemNums = new int[6];　//空の時は100
 
-    public GameObject inventory;
+    public GameObject maininventory;
+
+    public GameObject subinventory;
 
     [SerializeField] public Button[] Flame;
 
@@ -30,9 +33,10 @@ public class powerup : MonoBehaviour
             selectedItemNums[i] = 100;
         }
         //サンプル　seatus.itemcount[0] = 5; 
-        inventory.SetActive(false);
+        maininventory.SetActive(false);
+        subinventory.SetActive(false);
         Image = GetComponent<Image>();
-
+                
     }
 
     // Update is called once per frame
@@ -46,9 +50,13 @@ public class powerup : MonoBehaviour
     {
         if (selectnumber == 0)
         {
-            inventory.SetActive(true);
+            maininventory.SetActive(true);
             selectnumber = number;
-
+        }
+        else
+        {
+            subinventory.SetActive(true);
+            selectnumber = number;
         }
     }
 
@@ -76,7 +84,8 @@ public class powerup : MonoBehaviour
 
 
         selectnumber = 0;
-        inventory.SetActive(false);
+        maininventory.SetActive(false);
+        subinventory.SetActive(false);
 
     }
 

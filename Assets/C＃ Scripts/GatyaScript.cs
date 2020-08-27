@@ -9,11 +9,15 @@ public class GatyaScript : MonoBehaviour
 
     public GameObject secen1;
 
-    public GameObject secen10;
+    public GameObject secen5;
 
     public GameObject koumoku;
 
-    public Text text;
+    public GameObject result;
+
+    public GameObject nomoney1;
+
+    public GameObject nomoney5;
 
     [SerializeField] public GameObject[] icon;
 
@@ -30,9 +34,7 @@ public class GatyaScript : MonoBehaviour
 
         if (seatus.money < 100)
         {
-            secen1.SetActive(false);
-            secen10.SetActive(false);
-            text.text = "お金が足りないよ！";
+            nomoney1.SetActive(true);
             Debug.Log("No money");
 
         }
@@ -40,12 +42,13 @@ public class GatyaScript : MonoBehaviour
         {
             seatus.money -= 100;
             seatus.itemcount[item]++;
-            text.text = name[item] + "をゲット！！";
+         
 
             secen1.SetActive(true);
-            secen10.SetActive(false);
+            secen5.SetActive(false);
+            scene();
         }
-        scene();
+        
 
         for (int i = 0; i < icon.Length; i++)
             for (int j = 0; j < seatus.itemcount[i]; j++)
@@ -64,7 +67,7 @@ public class GatyaScript : MonoBehaviour
 
     public void fivecount()
     {
-        text.text = "";
+      
         string[] name = { "シャーペン", "ボールペン", "万年筆", "鉛筆", "ノリ", "コンパス", "定規", "フリクション", };
 
         for (int i = 0; i < 5; i++)
@@ -72,9 +75,7 @@ public class GatyaScript : MonoBehaviour
             int item = Random.Range(0, 8);
             if (seatus.money < 500)
             {
-                secen1.SetActive(false);
-                secen10.SetActive(false);
-                text.text = "お金が足りないよ！";
+                nomoney5.SetActive(true);
                 Debug.Log("No money");
             }else
             {
@@ -84,19 +85,20 @@ public class GatyaScript : MonoBehaviour
 
                 if (i % 3 == 0)
                 {
-                    text.text += name[item] + "をゲット！！\n";
+                   
                 }
                 else
                 {
-                    text.text += name[item] + "をゲット！！ ";
+                 
                 }
                 secen1.SetActive(false);
-                secen10.SetActive(true);
+                secen5.SetActive(true);
+                scene();
             }
 
         }
 
-        scene();
+      
     
        
     }
@@ -104,9 +106,15 @@ public class GatyaScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gatya = GameObject.Find("gatya scene").GetComponent<GatyaScript>();
+      //  gatya = GameObject.Find("gatya scene").GetComponent<GatyaScript>();
 
        anime = anime.GetComponent<Animator>();
+
+        result.SetActive(false);
+
+        nomoney1.SetActive(false);
+
+        nomoney5.SetActive(false);
 
     }
 
@@ -118,7 +126,7 @@ public class GatyaScript : MonoBehaviour
     public void scene()
     {
         anime.SetTrigger("gatya Trigger");
-
+        result.SetActive(true);
 
     }
     public void buck()

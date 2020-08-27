@@ -20,14 +20,12 @@ public class itemwindow : MonoBehaviour
     }
    public void Main()
     {
-        ani = gameObject.GetComponent<Animator>();
         ani.SetTrigger("main");
     }
-
     public void Sub()
     {
         ani.SetTrigger("sub");
     }
 
-  
+
 }

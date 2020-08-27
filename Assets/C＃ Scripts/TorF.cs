@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class TorF : MonoBehaviour
 {
-
-    public InputField inputField;
-
-    public Text nametext;
-
     public Text moneytext;
 
     // Start is called before the first frame update
@@ -95,14 +90,6 @@ public class TorF : MonoBehaviour
         SceneManager.LoadScene("hensei");
     }
 
-    public void nameenter()
-    {
-        nametext.text = inputField.text;
-        PlayerPrefs.SetString("USER_NAME", inputField.text);
-        //名前の保存
-        PlayerPrefs.Save();
-    }
-
     public void money()
     {
        PlayerPrefs.SetInt("MONEY", seatus.money);
@@ -110,8 +97,7 @@ public class TorF : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-   
-    
+  
 
 }
 

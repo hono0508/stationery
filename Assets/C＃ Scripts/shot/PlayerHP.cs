@@ -49,7 +49,7 @@ public class PlayerHP : MonoBehaviour
             lifegauge.Dead();
             HpBar.value = playerHP;
             Debug.Log("GameOver");
-            
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(100);
 
         }
 

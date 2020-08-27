@@ -14,7 +14,7 @@ public class LifeGauge : MonoBehaviour
     [SerializeField] Image target;
     [SerializeField] float radarLength = 30f;
     public static int resultmessage;
-
+    
     RectTransform rt;
     Vector2 offset;
     float r = 6f;
@@ -38,6 +38,8 @@ public class LifeGauge : MonoBehaviour
         {
             Instantiate<GameObject>(lifeObj, transform);
         }
+
+        
     }
 
     // Update is called once per frame

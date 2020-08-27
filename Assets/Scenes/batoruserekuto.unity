@@ -141,8 +141,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f3b664c492dd142900b1310b1b38ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 0}
-  nametext: {fileID: 0}
+  easy: {fileID: 1800248691}
+  normal: {fileID: 985750852}
+  hard: {fileID: 733582392}
+  kyokasub: {fileID: 0}
+  kyokamain: {fileID: 0}
+  characterred: {fileID: 0}
+  characterblue: {fileID: 0}
+  charactergreen: {fileID: 0}
   moneytext: {fileID: 0}
 --- !u!4 &77294680
 Transform:
@@ -1386,7 +1392,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865975154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 77294679}
+        m_MethodName: loadhome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1865975154

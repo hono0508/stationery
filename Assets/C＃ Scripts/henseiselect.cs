@@ -27,13 +27,13 @@ public class henseiselect : MonoBehaviour
 
     public void main()
     {
-        anime.SetTrigger("Main Trigger");
+        anime.SetTrigger("main");
 
 
     }
     public void sub()
     {
-        anime.SetTrigger("Sub Trigger");
+        anime.SetTrigger("sub");
 
 
     }
