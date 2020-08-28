@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerHP : MonoBehaviour
 {
     public float playerHP = 100;
@@ -18,16 +19,21 @@ public class PlayerHP : MonoBehaviour
 
     public static int resultmessage;
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
     
     // Update is called once per frame
     void Update() {
         //Debug.Log(this.transform.name);
-       
+
+      
+
+
         if (this.transform.position.y <= -10)
         {
             //Instantiate(player, new Vector3(0, 10, 0), transform.rotation);

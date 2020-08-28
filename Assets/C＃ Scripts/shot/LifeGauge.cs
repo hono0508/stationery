@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 
 public class LifeGauge : MonoBehaviour
@@ -19,6 +20,12 @@ public class LifeGauge : MonoBehaviour
     Vector2 offset;
     float r = 6f;
 
+    public static float CountDownTime;
+    public Text TextCountDown;
+
+    
+
+
     //　ライフゲージプレハブ
     [SerializeField]
     private GameObject lifeObj;
@@ -29,6 +36,7 @@ public class LifeGauge : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CountDownTime = 60.0F;
 
         rt = target.GetComponent<RectTransform>();
         offset = center.GetComponent<RectTransform>().anchoredPosition;
@@ -45,6 +53,16 @@ public class LifeGauge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        TextCountDown.text = String.Format("Time: {0:00}", CountDownTime);
+        CountDownTime -= Time.deltaTime;
+
+        if (CountDownTime <= 0.0F)
+        {
+            CountDownTime = 0.0F;
+            SceneManager.LoadScene("result");
+        }
+
         Vector3 enemyDir = enemypoint.position;
         enemyDir.y = playerpoint.position.y; // プレイヤーと敵の高さを合わせる
         enemyDir = enemypoint.position - playerpoint.position;
