@@ -56,8 +56,13 @@ public class custom : MonoBehaviour
         {
             seatus.itemcount[seatus.armor[selectnumber-1]]++;
         }
-        seatus.armor[selectnumber -1] = itemnumber;
+        if (seatus.armor[selectnumber - 1] !=24){
+            seatus.itemcount[seatus.armor[selectnumber - 1]]++;
+            kstm.icon[itemnumber].GetComponent<aitemuaikon>().UnArmor();
+        }
+        seatus.armor[selectnumber - 1] = itemnumber;
         seatus.itemcount[itemnumber]--; //選択したアイテムを減らす
+        kstm.icon[itemnumber].GetComponent<aitemuaikon>().SetArmor();
 
         //ボタンの子供であるTextを取得、非表示に
         if (Flame[selectnumber-1].gameObject.transform.Find("Text"))

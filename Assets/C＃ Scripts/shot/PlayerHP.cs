@@ -15,7 +15,7 @@ public class PlayerHP : MonoBehaviour
 
     public LifeGauge lifegauge;
 
-    public int enemycount;
+    [SerializeField] public static int enemycount;
 
     public static int resultmessage;
 

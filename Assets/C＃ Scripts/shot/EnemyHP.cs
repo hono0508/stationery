@@ -41,7 +41,7 @@ void Update()
         if (enemyHP <= 0)
         {
             Destroy(this.gameObject);
-            plyer.enemycount++;
+            PlayerHP.enemycount++;
             seatus.money += 100;
         }
     }
@@ -49,7 +49,7 @@ void Update()
     private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("cu")) {
-            enemyHP -= 10;
+            enemyHP -= 10 + (int)seatus.atack;
             HpBar.value = enemyHP;
 
         }
