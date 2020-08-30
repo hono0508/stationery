@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
         for (int e = 1; e <= 4; e++)
         {
-            Instantiate(enemy, new Vector3(Random.Range(1.0f,10.0f), 5, 0), Quaternion.identity);
+            Instantiate(enemy, new Vector3(Random.Range(1.0f,10.0f), 12,0), Quaternion.identity);
 
             GameObject player = GameObject.Find("ThirdPersonController");
 
