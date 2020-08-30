@@ -10,6 +10,16 @@ public class seatus: MonoBehaviour
 
     public static string name;
 
+    public static float GetAtack()
+    {
+        return atack;
+    }
+
+    public static float GetDefence()
+    {
+        return defence;
+    }
+
     // 0:シャーペンLv1,100,100　1:ボールペンLv1,120.80　2:万年筆Lv1,80,120　3:鉛筆Lv1,100,100　4:ノリLv1,10,10　5:コンパスLv1,10,10　6：定規Lv1,10,10　7:フリクションLv1,10,10
 
     // 8:シャーペンLv2,120,100 9:ボールペンLv2,130,90 10:万年筆Lv2,90,130 11:鉛筆Lv2,100,120 12:ノリLv2,20,20 13:コンパスLv2 14:定規,20,20 15:フリクションLv2,20,20
@@ -33,4 +43,7 @@ public class seatus: MonoBehaviour
     {
         
     }
+
+  
+    
 }

@@ -19,7 +19,15 @@ public class GatyaScript : MonoBehaviour
 
     public GameObject nomoney5;
 
+    public GameObject gatyaresult;
+
     [SerializeField] public GameObject[] icon;
+
+    public AudioClip soundnormal;
+
+    public AudioClip soundmoney;
+
+    AudioSource audioSource;
 
 
     GatyaScript gatya;
@@ -35,6 +43,7 @@ public class GatyaScript : MonoBehaviour
         if (seatus.money < 100)
         {
             nomoney1.SetActive(true);
+            gatyaresult.SetActive(false);
             Debug.Log("No money");
 
         }
@@ -76,6 +85,7 @@ public class GatyaScript : MonoBehaviour
             if (seatus.money < 500)
             {
                 nomoney5.SetActive(true);
+                gatyaresult.SetActive(false);
                 Debug.Log("No money");
             }else
             {
@@ -106,15 +116,20 @@ public class GatyaScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  gatya = GameObject.Find("gatya scene").GetComponent<GatyaScript>();
+        //  gatya = GameObject.Find("gatya scene").GetComponent<GatyaScript>();
 
-       anime = anime.GetComponent<Animator>();
+        anime = anime.GetComponent<Animator>();
 
         result.SetActive(false);
 
         nomoney1.SetActive(false);
 
         nomoney5.SetActive(false);
+
+
+
+    audioSource = GetComponent<AudioSource>();
+
 
     }
 
@@ -125,15 +140,15 @@ public class GatyaScript : MonoBehaviour
     }
     public void scene()
     {
+        audioSource.PlayOneShot(soundnormal);
         anime.SetTrigger("gatya Trigger");
-        result.SetActive(true);
 
     }
     public void buck()
     {
-        anime.SetTrigger("buck Trigger");
+        audioSource.PlayOneShot(soundmoney);
+        gatyaresult.SetActive(false);
 
-      
     }
 
 

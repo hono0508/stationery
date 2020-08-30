@@ -20,7 +20,6 @@ public class custom : MonoBehaviour
         seatus.itemcount[1] = 5;
         for (int i = 0; i < seatus.armor.Length; i++)
         {
-            seatus.money = 10000;
 
             if (seatus.armor[i] != 24)
             {
