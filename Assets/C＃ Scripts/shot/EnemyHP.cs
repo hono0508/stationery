@@ -19,11 +19,11 @@ public class EnemyHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        plyer = GameObject.Find("EthanBody").GetComponent<PlayerHP>();
+        plyer = GameObject.Find("FPSController (1)").GetComponent<PlayerHP>();
 
 
 
-        GameObject player = GameObject.Find("ThirdPersonController");
+        GameObject player = GameObject.Find("FPSController (1)");
 
         target = player.transform;
 

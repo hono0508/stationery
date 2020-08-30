@@ -23,7 +23,8 @@ public class LifeGauge : MonoBehaviour
     public static float CountDownTime;
     public Text TextCountDown;
 
-    
+
+    public GameObject player;
 
 
     //　ライフゲージプレハブ
@@ -85,6 +86,7 @@ public class LifeGauge : MonoBehaviour
             SceneManager.LoadScene("result");
     
         }
+    
     }
 
         //死亡数をカウントする

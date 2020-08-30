@@ -24,7 +24,7 @@ public class PlayerHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+
     }
     
     // Update is called once per frame
@@ -34,16 +34,15 @@ public class PlayerHP : MonoBehaviour
       
 
 
-        if (this.transform.position.y <= -10)
+        if (this.transform.position.y <= -5)
         {
-            //Instantiate(player, new Vector3(0, 10, 0), transform.rotation);
-            //Destroy(transform.parent.gameObject);
-            //transform.parent.transform.position = new Vector3(0, 10, 0);
-            //transform.localPosition = Vector3.zero;
-            //transform.root.transform.position = new Vector3(0, 10, 0);
-            resultmessage = 0;
-          //  Debug.Log("rakka");
-            SceneManager.LoadScene("result");
+            transform.root.transform.position = new Vector3(0, 10, 0);
+
+            playerHP = 100;
+
+            lifegauge.Dead();
+            HpBar.value = playerHP;
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(100);
         }
 
         if (playerHP <= 0) {
@@ -54,18 +53,11 @@ public class PlayerHP : MonoBehaviour
 
             lifegauge.Dead();
             HpBar.value = playerHP;
-            Debug.Log("GameOver");
             naichilab.RankingLoader.Instance.SendScoreAndShowRanking(100);
 
         }
 
-        if (enemycount == 5)
-        {
-            //resultmessage 1 = win 2 = lose
-
-            resultmessage = 1;
-            SceneManager.LoadScene("result");
-        }
+       
     }
 
     private void OnTriggerStay(Collider col) {
