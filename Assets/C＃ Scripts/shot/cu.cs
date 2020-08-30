@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class cu : MonoBehaviour {
-    private float speed = 10;
+    private float speed = 15;
     // Start is called before the first frame update
     void Start()
     {
