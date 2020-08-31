@@ -6,53 +6,56 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/home.unity
+    guid: 17aa3de08ca743347b26bd8756b3eee2
+  - enabled: 1
+    path: Assets/Scenes/gatya.unity
+    guid: b7e68882f673e8341bdd5b94700f88c6
+  - enabled: 1
     path: Assets/Scenes/batoruserekuto.unity
     guid: 9592b2a90dac169478a07e07b7b8c0ff
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/game.unity
     guid: 63a8456e1e22a474d9c3a308d98d5108
   - enabled: 1
-    path: Assets/Scenes/gatya.unity
-    guid: f76d3f13e259e2e428858638a0f615cb
-  - enabled: 1
-    path: Assets/Scenes/hensei.unity
-    guid: 31550de0e5b191543926a8771f3bd247
-  - enabled: 1
-    path: Assets/Scenes/home.unity
-    guid: 17aa3de08ca743347b26bd8756b3eee2
-  - enabled: 0
-    path: Assets/Scenes/inventory.unity
-    guid: e160e239bea7b284796d141c3d378ecb
-  - enabled: 1
-    path: Assets/Scenes/kyara.unity
-    guid: 3a3c5ac5ac4ca2a48a6a1c6b2ed19b92
-  - enabled: 1
-    path: Assets/Scenes/kyoka.unity
-    guid: 0e0adc9ea73583346aa15a30b1b84f84
-  - enabled: 1
-    path: Assets/Scenes/motimono.unity
-    guid: 138b22ebe71175242b97ea419bf02788
-  - enabled: 0
-    path: Assets/Scenes/name.unity
-    guid: df4cbf79a06268847af580c490bf44f8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Scenes/result.unity
     guid: bfc481b5f97675c4aaf7d228089b9171
   - enabled: 1
-    path: Assets/Scenes/setumei.unity
-    guid: 03a06d66d30acc24ba26234460c1013b
-  - enabled: 1
-    path: Assets/Scenes/title.unity
-    guid: a17464d513690c447a6625cafd646f74
-  - enabled: 1
     path: Assets/naichilab/unity-simple-ranking/Scenes/Ranking.unity
     guid: 152244f5855414ac4a3874f14efa583c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/hensei.unity
+    guid: 31550de0e5b191543926a8771f3bd247
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/kyara.unity
+    guid: 3a3c5ac5ac4ca2a48a6a1c6b2ed19b92
+  - enabled: 0
+    path: Assets/Scenes/kyoka.unity
+    guid: 0e0adc9ea73583346aa15a30b1b84f84
+  - enabled: 0
+    path: Assets/Scenes/motimono.unity
+    guid: 138b22ebe71175242b97ea419bf02788
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/setumei.unity
+    guid: 03a06d66d30acc24ba26234460c1013b
+  - enabled: 0
+    path: Assets/Scenes/title.unity
+    guid: a17464d513690c447a6625cafd646f74
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

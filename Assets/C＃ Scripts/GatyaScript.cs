@@ -29,6 +29,8 @@ public class GatyaScript : MonoBehaviour
 
     AudioSource audioSource;
 
+    public Text moneytext;
+
 
     GatyaScript gatya;
 
@@ -56,6 +58,7 @@ public class GatyaScript : MonoBehaviour
             secen1.SetActive(true);
             secen5.SetActive(false);
             scene();
+            moneytext.text = seatus.money.ToString();
         }
         
 
@@ -104,6 +107,7 @@ public class GatyaScript : MonoBehaviour
                 secen1.SetActive(false);
                 secen5.SetActive(true);
                 scene();
+                moneytext.text = seatus.money.ToString();
             }
 
         }
@@ -126,9 +130,9 @@ public class GatyaScript : MonoBehaviour
 
         nomoney5.SetActive(false);
 
+        moneytext.text = seatus.money.ToString();
 
-
-    audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 
 
     }
@@ -140,13 +144,13 @@ public class GatyaScript : MonoBehaviour
     }
     public void scene()
     {
-        audioSource.PlayOneShot(soundnormal);
+        //audioSource.PlayOneShot(soundnormal);
         anime.SetTrigger("gatya Trigger");
 
     }
     public void buck()
     {
-        audioSource.PlayOneShot(soundmoney);
+       // audioSource.PlayOneShot(soundmoney);
         gatyaresult.SetActive(false);
 
     }
