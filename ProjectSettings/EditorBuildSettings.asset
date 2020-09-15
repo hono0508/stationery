@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: a17464d513690c447a6625cafd646f74
+  - enabled: 1
     path: Assets/Scenes/home.unity
     guid: 17aa3de08ca743347b26bd8756b3eee2
   - enabled: 1
@@ -50,12 +53,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/setumei.unity
     guid: 03a06d66d30acc24ba26234460c1013b
-  - enabled: 0
-    path: Assets/Scenes/title.unity
-    guid: a17464d513690c447a6625cafd646f74
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

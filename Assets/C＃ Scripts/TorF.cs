@@ -49,7 +49,7 @@ public class TorF : MonoBehaviour
 
     public void loadsettei()
     {
-        SceneManager.LoadScene("settei");
+        SceneManager.LoadScene("setumei");
     }
 
     public void loadname()
@@ -69,17 +69,7 @@ public class TorF : MonoBehaviour
         SceneManager.LoadScene("motimono");
     }
 
-    public void loaskoumonu()
-    {
-        audioSource.PlayOneShot(soundnormal);
-        SceneManager.LoadScene("koumonu");
-    }
-
-    public void loadgakko()
-    {
-        SceneManager.LoadScene("gakko");
-    }
-
+   
     public void loadgatya()
     {
         audioSource.PlayOneShot(soundnormal);
@@ -100,7 +90,12 @@ public class TorF : MonoBehaviour
 
     public void loadgame()
     {
-        audioSource.PlayOneShot(soundchime);
+        GameObject.Find("LoadGameCanvas").GetComponent<Animator>().SetTrigger("game Trigger");
+        Invoke("LoadGameScene", 4.5f);
+    }
+
+    void LoadGameScene()
+    {
         SceneManager.LoadScene("game");
     }
 
@@ -114,6 +109,12 @@ public class TorF : MonoBehaviour
     {
         audioSource.PlayOneShot(soundpaper2);
         SceneManager.LoadScene("hensei");
+    }
+
+    public void loadtitle()
+    {
+        audioSource.PlayOneShot(soundpaper2);
+        SceneManager.LoadScene("title");
     }
 
     public void money()

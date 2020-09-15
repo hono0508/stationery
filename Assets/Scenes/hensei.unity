@@ -458,7 +458,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: changeImage
+        m_MethodName: OnClickFlame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1451,7 +1451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 55, y: 0.00004566034}
+  m_AnchoredPosition: {x: 55, y: 0.000059370366}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &358317971
@@ -1641,7 +1641,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: OnClickFlame
+        m_MethodName: changeImage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3064,7 +3064,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4229,7 +4229,7 @@ MonoBehaviour:
   - {fileID: 1778213776}
   - {fileID: 1422770004}
   - {fileID: 1988949694}
-  kstm: {fileID: 0}
+  kstm: {fileID: 164069019}
   inventory: {fileID: 164069017}
   close: {fileID: 0}
 --- !u!224 &1253361163 stripped
@@ -4492,7 +4492,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: OnClickFlame
+        m_MethodName: changeImage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4815,7 +4815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: changeImage
+        m_MethodName: OnClickFlame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5543,7 +5543,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: changeImage
+        m_MethodName: OnClickFlame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5774,7 +5774,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: changeImage
+        m_MethodName: OnClickFlame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5999,7 +5999,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: OnClickFlame
+        m_MethodName: changeImage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6206,7 +6206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000004213416, y: 0.00006430709}
+  m_AnchoredPosition: {x: 0.000004213416, y: 0.000059455866}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1886834997
@@ -6325,8 +6325,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1888575885}
   m_HandleRect: {fileID: 0}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6550,7 +6550,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151617980}
-        m_MethodName: OnClickFlame
+        m_MethodName: changeImage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

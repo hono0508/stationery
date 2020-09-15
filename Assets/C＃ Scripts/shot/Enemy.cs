@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
         {
             int enemyL = Random.Range(0, enemyLooks.Length); //見た目をランダムにする
             Transform ene = Instantiate(enemy, new Vector3(Random.Range(10.0f, -2.5f), -1, 0), Quaternion.identity).transform;
-            Instantiate(enemyLooks[enemyL], ene.position, Quaternion.identity, ene);
+            Instantiate(enemyLooks[enemyL], ene.position + new Vector3(0, 1, 0), Quaternion.identity, ene);
 
         }
     }
@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
             int enemyL = Random.Range(0, enemyLooks.Length); //見た目をランダムにする
 
             Transform e = Instantiate(enemy, new Vector3(posX, -1, posZ), Quaternion.identity).transform;
-            Instantiate(enemyLooks[enemyL], e.position, Quaternion.identity, e);
+            Instantiate(enemyLooks[enemyL], e.position + new Vector3(0, 1, 0), Quaternion.identity, e);
 
             timer = 0; //タイマーをリセットする
         }

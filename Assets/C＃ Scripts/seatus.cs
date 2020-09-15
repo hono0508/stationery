@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class seatus: MonoBehaviour
 {
@@ -35,7 +37,7 @@ public class seatus: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        int money = 500;
     }
 
     // Update is called once per frame
@@ -44,6 +46,8 @@ public class seatus: MonoBehaviour
         
     }
 
-  
-    
+    internal static Text mney()
+    {
+        throw new NotImplementedException();
+    }
 }
