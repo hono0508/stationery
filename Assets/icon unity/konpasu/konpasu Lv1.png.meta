@@ -100,30 +100,10 @@ TextureImporter:
       name: konpasu Lv1_0
       rect:
         serializedVersion: 2
-        x: 253
-        y: 178
-        width: 317
-        height: 274
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bb037a401e4c7d49a57e8f06fc442ff
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: konpasu Lv1_1
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 268
-        width: 12
-        height: 52
+        x: 288
+        y: 189
+        width: 262
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,7 +111,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c650821f01111141a1a44346cde93f4
+      spriteID: 5ae064167b5a73a428ed1be8cda198f5
       vertices: []
       indices: 
       edges: []
