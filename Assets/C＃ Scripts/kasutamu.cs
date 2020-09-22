@@ -33,7 +33,7 @@ public class kasutamu : MonoBehaviour
 
     public void Reset()
     {
-
+        if (!SubPanel) return;
         for (int i = 0; i < icon.Length; i++)
         {
             Debug.Log(seatus.itemcount[i]);
